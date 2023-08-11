@@ -5,14 +5,14 @@
 /**
  * main - print last digit of number
  *
- * Return: 0 if successful
+ * Return - 0 if successful
  *
  */
 int main(void)
 {
 	int n;
 	int i = n % 10;
-
+ 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
