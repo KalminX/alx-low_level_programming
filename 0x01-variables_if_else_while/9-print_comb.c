@@ -10,12 +10,13 @@ int main(void)
 	int c;
 
 	putchar(48);
-	for (c = 49; c <= 57; c++)
+	for (c = 48; c <= 57; c++)
 	{
+		putchar(c);
 		putchar(',');
 		putchar(' ');
-		putchar(c);
 	}
+	putchar(c);
 
 	return (0);
 }
