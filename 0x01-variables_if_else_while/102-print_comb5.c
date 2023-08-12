@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints all possible combinations of two two-digit numbers
+ * main - a program that prints combo of two two numbers
  *
  * Return: 0 if successful
  *
@@ -30,6 +30,7 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
