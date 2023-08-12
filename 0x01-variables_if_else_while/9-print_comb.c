@@ -8,8 +8,8 @@
 int main(void)
 {
 	char c;
-	
-	putchar('0')
+
+	putchar('0');
 	for (c = '1'; c <= '9'; c++)
 	{
 		putchar(',');
