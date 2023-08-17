@@ -1,13 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints all natural from n to 98
  * @n: the parameter to be printed to or from
  */
 void print_to_98(int n)
 {
+	int i, j;
+
 	if (n >= 98)
 	{
-		for (int i = n; i >= 98; i--)
+		for (i = n; i >= 98; i--)
 		{
 			if (i == 98)
 			{
@@ -23,7 +26,7 @@ void print_to_98(int n)
 
 	if (n <= 98)
 	{
-		for (int j = n; j <= 98; j++)
+		for (j = n; j <= 98; j++)
 		{
 			if (j == 98)
 			{
@@ -34,6 +37,6 @@ void print_to_98(int n)
 				printf("%d, ", j);
 			}
 		}
-		printf("\n")
+		printf("\n");
 	}
 }
