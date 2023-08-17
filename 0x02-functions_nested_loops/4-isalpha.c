@@ -4,7 +4,7 @@
  *
  * @c: parameter to be checked
  *
- * return: 1 if it's a letter 0 if otherwise
+ * Return: 1 if it's a letter 0 if otherwise
  */
 int _isalpha(int c)
 {
