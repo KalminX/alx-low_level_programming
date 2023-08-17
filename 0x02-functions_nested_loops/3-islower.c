@@ -2,6 +2,8 @@
 /**
  * _islower - checks the case of alphabets
  *
+ * @c: the parameter to be checked
+ *
  * Return: 0 if lowercase, 1 if uppercase
  */
 int _islower(int c)
