@@ -1,8 +1,8 @@
-#include "main.h"<F11>
+#include "main.h"
 /**
  * jack_bauer - a day in the life of jack
  *
- *
+ * Return: doesnt return anything
  *
  *
  */
