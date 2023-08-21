@@ -20,5 +20,4 @@ void rev_string(char *s)
 		*(s + i) = h;
 		k++;
 	}
-	_putchar('\n');
 }
