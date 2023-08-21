@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - _isupper
+ * _isupper - checks if the case of a letter is upper case
  * @c: letter to be checked
  * Return: 0 if successful
  */
