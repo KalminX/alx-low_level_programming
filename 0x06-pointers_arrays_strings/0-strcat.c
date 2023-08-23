@@ -3,6 +3,7 @@
  * _strcat - a program that concantenates two strings
  * @dest: string to be returned
  * @src: string added
+ * Return: returns the string dest
  */
 char *_strcat(char *dest, char *src)
 {
