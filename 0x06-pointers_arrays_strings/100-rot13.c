@@ -6,21 +6,21 @@
  */
 char *rot13(char *str)
 {
-	int i;
+	int i, j = 0;
 	char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (*str != '\0')
+	while (*(str + j) != '\0')
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (*str == *(input + i))
+			if (*(str + j) == *(input + i))
 			{
-				*str = *(output + i);
+				*(str + j) = *(output + i);
 				break;
 			}
 		}
-		str++;
+		j++;
 	}
 	return (str);
 }
