@@ -15,8 +15,10 @@ char *rot13(char *str)
 		for (i = 0; i < 52; i++)
 		{
 			if (*str == *(input + i))
+			{
 				*str = *(output + i);
 				break;
+			}
 		}
 		str++;
 	}
