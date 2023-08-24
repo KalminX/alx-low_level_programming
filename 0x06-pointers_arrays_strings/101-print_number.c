@@ -23,7 +23,7 @@ void print_number(int n)
 	{
 		digit = n / div;
 		_putchar('0' + digit);
-		digit = n % div;
+		n = n % div;
 		div = div / 10;
 	}
 }
