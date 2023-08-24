@@ -15,7 +15,7 @@ char *rot13(char *str)
 		for (i = 0; i < 52; i++)
 		{
 			if (*str == *(input + i))
-				*(str + i) = *(output + i);
+				*str = *(output + i);
 		}
 		str++;
 	}
