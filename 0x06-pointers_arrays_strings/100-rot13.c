@@ -16,6 +16,7 @@ char *rot13(char *str)
 		{
 			if (*str == *(input + i))
 				*str = *(output + i);
+				break;
 		}
 		str++;
 	}
