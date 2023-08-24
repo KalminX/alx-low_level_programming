@@ -14,8 +14,8 @@ char *rot13(char *str)
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (*str == *input)
-				*str = *output;
+			if ((*str + i) == *(input + i))
+				*(str + i) = *(output + i);
 		}
 		*str++;
 	}
