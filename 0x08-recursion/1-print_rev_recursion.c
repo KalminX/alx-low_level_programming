@@ -2,13 +2,13 @@
 /**
  * _print_rev_recursion - to print a string in reverse using recursion
  * @s: the string to be printed in reverse
- * Return: returns recursively
  */
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return (0);
+		return;
 	}
-	return (1 + (_strlen(s + 1)));
+	num = *s;
+	_print_
 }
