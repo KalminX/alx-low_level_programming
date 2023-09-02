@@ -1,5 +1,5 @@
 #include "main.h"
-int is_prime_number(int n, int i);
+int is_prime(int n, int i);
 /**
  * is_prime_number - check if a number is prime recursively
  * @n: the number to be checked
