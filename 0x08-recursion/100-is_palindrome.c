@@ -21,14 +21,16 @@ int is_palindrome(char *s)
  */
 int len_string(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        return (1 + (len_string(s + 1)));
+	if (*s == '\0')
+		return (0);
+	return (1 + (len_string(s + 1)));
 }
 
 /**
- * check_if_palindrome - a function to check if the given string is a palindrome
+ * check_if_palindrome - a function to check if
+ * the given string is a palindrome
  * @i: helps me check through the string
+ * @s: the string to be checked
  * @len: the length of the string
  * Return: returns 1 if the string is a palindrome and 0 if not
  */
