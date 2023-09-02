@@ -23,7 +23,7 @@ int len_string(char *s)
 {
         if (*s == '\0')
                 return (0);
-        return (1 + (len_string(s + 1));
+        return (1 + (len_string(s + 1)));
 }
 
 /**
@@ -40,4 +40,3 @@ int check_if_palindrome(char *s, int i, int len)
 		return (1);
 	return (check _if_palindrome(s, i + 1, len - 1));
 }
-~
