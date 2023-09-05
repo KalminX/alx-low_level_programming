@@ -13,14 +13,16 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 1; i < 3; i++)
 		{
 			product *= atoi(argv[i]);
 		}
 		printf("%d\n", product);
+		return (1);
 	}
 	else
 	{
 		printf("Error\n");
 	}
+	return (0);
 }
