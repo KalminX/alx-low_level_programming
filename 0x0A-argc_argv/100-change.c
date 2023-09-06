@@ -8,10 +8,10 @@
  * @argv: argument vector
  * Return: retuns 0 if true
  */
-int main(int argc, *argv[])
+int main(int argc, char *argv[])
 {
 	int i, j, num, result;
-	int coin[5] = {25, 10, 5, 2, 1};
+	int coin[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -40,4 +40,5 @@ int main(int argc, *argv[])
 		}
 	}
 	printf("%d", result);
+	return (0);
 }
