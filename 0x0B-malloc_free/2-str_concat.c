@@ -17,14 +17,14 @@ char *str_concat(char *s1, char *s2)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	sum = len1 + len2;
-	ptr = malloc(sum);
+	ptr = (char *) malloc(sum + 1);
 	if (ptr == NULL)
 	       return (NULL);
 
 
-	for (i = 0; i < sum - 1; i++)
+	for (i = 0; i < sum; i++)
 	{
-		if (i < len1 - 1)
+		if (i < len1)
 		{
 			*(ptr + i) = *s1;
 			s1++;
