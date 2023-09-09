@@ -30,7 +30,7 @@ char *_strdup(char *str)
 /**
  * _strlen - the length of the string
  * @str: the string whose length id to be found
- * returns the length of the string
+ * Return: returns the length of the string
  */
 unsigned int _strlen(char *str)
 {
