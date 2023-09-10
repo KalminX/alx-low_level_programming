@@ -19,6 +19,9 @@ char *str_concat(char *s1, char *s2)
 	sum = len1 + len2;
 	ptr = (char *) malloc(sum + 1);
 
+	if (ptr == NULL)
+		return (NULL);
+
 	if (*s1)
 	{
 		while (i < len1)
