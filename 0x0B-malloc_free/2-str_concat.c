@@ -21,6 +21,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (ptr == NULL)
 		return (NULL);
+	if (!s1 or !s2)
+		return ("");
 
 	for (i = 0; i < sum; i++)
 	{
