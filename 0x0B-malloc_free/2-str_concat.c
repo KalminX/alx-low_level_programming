@@ -11,7 +11,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1, len2, sum, i;
+	unsigned int len1 = 0, len2 = 0, sum = 0, i = 0;
 	char *ptr;
 
 	len1 = _strlen(s1);
@@ -19,22 +19,21 @@ char *str_concat(char *s1, char *s2)
 	sum = len1 + len2;
 	ptr = (char *) malloc(sum + 1);
 
-	if (ptr == NULL)
-		return (NULL);
-	if (!s1 or !s2)
-		return ("");
-
-	for (i = 0; i < sum; i++)
+	if (*s1)
 	{
-		if (i < len1)
+		while (i < len1)
 		{
-			*(ptr + i) = *s1;
-			s1++;
+			*(ptr + i) = *(s1 + i);
+			i++;
 		}
-		else
+	}
+
+	if (*s2)
+	{
+		while (i < sum)
 		{
-			*(ptr + i) = *s2;
-			s2++;
+			*(ptr + i) = *(s2 + i - len1);
+			i++;
 		}
 	}
 	*(ptr + 1) = '\0';
