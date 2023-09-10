@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 			s2++;
 		}
 	}
-	*(ptr + i) = '\0';
+	*(ptr + 1) = '\0';
 
 	return (ptr);
 }
