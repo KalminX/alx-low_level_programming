@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 			i++;
 		}
 	}
-	*(ptr + 1) = '\0';
+	*(ptr + sum) = '\0';
 
 	return (ptr);
 }
