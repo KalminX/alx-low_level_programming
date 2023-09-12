@@ -1,6 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <stdio.h>
+#define __FILE__
 
-#define __FILE__ "\n"
-
-#endif /*MAIN_H*/
+/**
+ * main - prints the name of the file
+ * Return: returns 0
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
