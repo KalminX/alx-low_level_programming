@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define __FILE__
+#include "main.h"
 
 /**
  * main - prints the name of the file
