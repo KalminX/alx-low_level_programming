@@ -52,7 +52,7 @@ char *str_concat(char *s1, char *s2)
  */
 unsigned int _strlen(char *str)
 {
-	if (str == NULL)
+	if (str == NULL || *str == '\0')
 		return (0);
 	return (1 + _strlen(str + 1));
 }
