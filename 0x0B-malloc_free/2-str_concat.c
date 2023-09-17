@@ -11,7 +11,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int len1 = 0, len2 = 0, sum = 0, i = 0;
+	unsigned int len1 = 0, len2 = 0, sum = 0, i = 0, j = 0;
 	char *ptr;
 
 	len1 = _strlen(s1);
@@ -35,11 +35,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		while (i < sum)
 		{
-			*(ptr + i) = *(s2 + i - len1);
-			i++;
+			*(ptr + len1 - 1) = *(s2 + j);
+			j++;
 		}
 	}
-	*(ptr + sum) = '\0';
+	(ptr + sum) = '\0';
 
 	return (ptr);
 }
