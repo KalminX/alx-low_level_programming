@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (*s2)
 	{
-		while (i < sum)
+		while (j < sum)
 		{
 			*(ptr + len1 - 1) = *(s2 + j);
 			j++;
