@@ -10,17 +10,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i, count;
+	int i = 0, count;
 	char *data;
 
-	data = strdup(h->str);
 	count = h->len;
-	while (h->str != NULL)
+	while (h != NULL)
 	{
 		h = h->next;
+		data = strdup(h->str);
 		if (data != NULL)
 		{
-			while (data != NULL)
+			while (*(data + i) != '\0')
 			{
 				_putchar(*(data + i));
 				i++;
