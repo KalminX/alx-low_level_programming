@@ -20,15 +20,10 @@ size_t print_list(const list_t *h)
 		data = strdup(h->str);
 		if (data != NULL)
 		{
-			while (*(data + i) != '\0')
-			{
-				_putchar(*(data + i));
-				i++;
-			}
+			printf("[%d] %s", i, data);
 		}
 		else
-			_putchar('0');
-		_putchar('\n');
+			printf("[%d]\n", 0);
 		count++;
 	}
 	return (count);
