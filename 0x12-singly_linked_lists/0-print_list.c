@@ -10,21 +10,18 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i = 0, count;
-	char *data;
+	size_t i = 0;
 
-	count = h->len;
 	while (h != NULL)
 	{
-		h = h->next;
-		data = strdup(h->str);
-		if (data != NULL)
+		i++;
+		if (h->next != NULL)
 		{
-			printf("[%d] %s", i, data);
+			printf("[%d] %s", h->len, h->str);
 		}
 		else
-			printf("[%d]\n", 0);
-		count++;
+			printf("[0] (nil)\n");
+		h = h->next;
 	}
-	return (count);
+	return (i);
 }
