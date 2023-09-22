@@ -11,7 +11,6 @@ int _putchar(char c);
  *
  * Description: singly linked list node structure
  */
-#include <stdlib.h>
 typedef struct list_s
 {
 	char *str;
