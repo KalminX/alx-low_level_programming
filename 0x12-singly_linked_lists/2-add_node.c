@@ -1,5 +1,5 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 /**
  * add_node - a functon that adds a node to
  * the beginning of a linked list
