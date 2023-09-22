@@ -4,16 +4,16 @@
  * list_len - a function that prints the
  * number of elements in a linked list
  * @h: the head of the linked list
- * @Return: returns the size of the list in byte
+ * Return: returns the size of the list in byte
  */
 size_t list_len(const list_t *h)
 {
-	size_t count;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
 		count++;
-		h->next;
+		h = h->next;
 	}
 	return (count);
 }
