@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stddef.h>
+
+
 int _putchar(char c);
 /**
  * struct list_s - singly linked list
@@ -10,11 +11,15 @@ int _putchar(char c);
  *
  * Description: singly linked list node structure
  */
+#include <stdlib.h>
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 size_t print_list(const list_t *h);
+
+
+
 #endif /*MAIN_H*/
