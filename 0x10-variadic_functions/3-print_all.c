@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <string.h>
 /**
  * print_all - a function that can print anything
  * @format: a string containing the specifiers
