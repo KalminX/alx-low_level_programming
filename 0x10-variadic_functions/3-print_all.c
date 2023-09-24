@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 		case 's':
 			if (va_arg(my_entries, char*))
 				printf("%s%s", ch, va_arg(my_entries, char*));
-			else
+			if (!va_arg(my_entries, char *))
 				printf("%s%s", ch, "(nil)");
 			break;
 		default:
