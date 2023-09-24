@@ -34,6 +34,11 @@ void print_all(const char * const format, ...)
 		default:
 			break;
 		}
+		while(strchr("fcis", *(format + i)))
+		{
+			ch = ", ";
+			break;
+		}
 		i++;
 		ch = ", ";
 	}
