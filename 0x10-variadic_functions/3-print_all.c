@@ -6,7 +6,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list my_entries;
-	char *string;
+	char *string = "";
 
 	int i = 0;
 	char *ch = "";
