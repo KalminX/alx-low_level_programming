@@ -27,10 +27,13 @@ void print_all(const char * const format, ...)
 			printf("%s%c", ch, va_arg(my_entries, int));
 			break;
 		case 's':
-			if (string)
+			if (string != NULL)
+			{
 				printf("%s%s", ch, va_arg(my_entries, char*));
+			}
 			if (string == NULL)
-				printf("%s%s", ch, "(nil)");
+			{
+				printf("%s(nil)", ch);
 			break;
 		default:
 			break;
