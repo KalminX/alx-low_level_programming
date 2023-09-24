@@ -29,13 +29,9 @@ void print_all(const char * const format, ...)
 		case 's':
 			string = va_arg(my_entries, char*);
 			if (string != NULL)
-			{
 				printf("%s%s", ch, string);
-			}
 			if (string == NULL)
-			{
 				printf("%s(nil)", ch);
-			}
 			break;
 		default:
 			break;
