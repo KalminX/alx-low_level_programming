@@ -29,11 +29,11 @@ void print_all(const char * const format, ...)
 				printf("%s%s", ch, va_arg(my_entries, char*));
 			else
 				printf("%s%s", ch, "(nil)");
+			break;
 		default:
 			break;
 		}
 		i++;
-		first = 0;
 		ch = ", ";
 	}
 	va_end(my_entries);
