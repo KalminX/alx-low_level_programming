@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 		switch (*(format + i))
 		{
 		case 'f':
-			printf("%s%f", ch, va_arg(my_entries, float));
+			printf("%s%f", ch, va_arg(my_entries, double));
 			break;
 		case 'i':
 			printf("%s%d", ch, va_arg(my_entries, int));
