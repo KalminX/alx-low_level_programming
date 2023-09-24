@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
-/*
- * sum_them_all - a function that adds an
- * arbitrary number of elements
+/**
+ * sum_them_all - a function that adds an arbitrary number of elements
  * @n: the number of integers
  * Return: returns the sum of the elements
  */
