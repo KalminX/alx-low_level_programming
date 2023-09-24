@@ -41,7 +41,6 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		i++;
-		ch = ", ";
 	}
 	va_end(my_entries);
 	printf("\n");
