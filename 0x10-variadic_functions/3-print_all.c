@@ -6,6 +6,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list my_entries;
+	char *string;
 
 	int i = 0;
 	char *ch = "";
@@ -25,9 +26,9 @@ void print_all(const char * const format, ...)
 			printf("%s%c", ch, va_arg(my_entries, int));
 			break;
 		case 's':
-			if (va_arg(my_entries, char*))
+			if (string)
 				printf("%s%s", ch, va_arg(my_entries, char*));
-			if (!va_arg(my_entries, char *))
+			if (!string)
 				printf("%s%s", ch, "(nil)");
 			break;
 		default:
