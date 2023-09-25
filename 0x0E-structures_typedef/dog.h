@@ -1,5 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
 /**
  * struct dog - a struct for any dog
  * @name: the name of the dog
