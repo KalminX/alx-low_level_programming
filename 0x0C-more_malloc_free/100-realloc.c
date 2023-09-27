@@ -24,12 +24,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (new);
 	}
 
-	result = malloc(new_size);
-	if (result == NULL)
+	new = malloc(new_size);
+	if (new == NULL)
 		return (NULL);
 	for (i = 0; i < old_size && i < new_size; i++)
-		result[i] = ptr[i];
+		new[i] = ptr[i];
 	free(ptr);
 
-	return (result);
+	return (new);
 }
