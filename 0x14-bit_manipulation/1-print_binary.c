@@ -6,14 +6,14 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i = sizeof(unsigned long int) * 8 * 2, is_one = 0;
+	int i = sizeof(unsigned long int) * 8, is_one = 0;
 
 	if (n == 0)
 	{
 		printf("0");
 	}
 
-	for (i = 31; i >= 0; i--)
+	for (i; i >= 0; i--)
 	{
 		if (n & (1 << i))
 		{
