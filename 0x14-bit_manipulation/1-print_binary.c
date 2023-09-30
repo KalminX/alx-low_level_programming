@@ -6,21 +6,22 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i = sizeof(unsigned long int) * 8, is_one = 0;
+	int is_one = 0, i;
+	unsigned long int test = 1;
 
 	if (n == 0)
 	{
 		printf("0");
 	}
 
-	for (i; i >= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
-		if (n & (1 << i))
+		if (n & (test << i))
 		{
 			is_one = 1;
 			printf("1");
 		}
-		if (is_one && !(n & (1 << i)))
+		else if (is_one)
 		{
 			printf("0");
 		}
