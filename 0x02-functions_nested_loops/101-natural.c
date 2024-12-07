@@ -3,6 +3,7 @@
 
 /**
  * main - Contains logic to sum all multiples of 3 and 5
+ * Return: Returns 0 if successful
  */
 int main(void)
 {
@@ -18,5 +19,6 @@ int main(void)
 		i++;
 	}
 	printf("%d\n", sum);
+
 	return (0);
 }
