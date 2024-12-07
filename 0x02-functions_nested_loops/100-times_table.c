@@ -32,12 +32,12 @@ void print_times_table(int n)
 					k = 1;
 					product_copy = product;
 					product_space = product;
-					if (product_space >= 10 && product_space <= 100)
+					if (product_space >= 10 && product_space < 100)
 					{
 						_putchar(' ');
 						_putchar(' ');
 					}
-					else if (product_space >= 100 && product_space <= 1000)
+					else if (product_space >= 100 && product_space < 1000)
 					{
 						_putchar(' ');
 					}
@@ -46,7 +46,7 @@ void print_times_table(int n)
 						k *= 10;
 						product_copy /= 10;
 					}
-					while(product && (k >= 10))
+					while((product_space / k) && (k >= 10))
 					{
 						_putchar(product/k + '0');
 						product%=k;
