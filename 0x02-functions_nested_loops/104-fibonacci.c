@@ -14,7 +14,7 @@ int main(void)
 	printf("%d, %d, ", 1, 2);
 	sum_before = 2;
 	sum = 3;
-	for (i = 2; i <= 98; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		if (i < 98)
 		{
