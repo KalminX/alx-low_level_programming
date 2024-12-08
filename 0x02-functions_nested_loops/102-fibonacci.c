@@ -24,7 +24,7 @@ int main(void)
 		}
 		else if (i == 49)
 		{
-			printf("%li\n", sum + sum_before);
+			printf("%li\n", sum);
 		}
 	}
 	return (0);
